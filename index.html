@@ -14,7 +14,7 @@
     
     <!-- Keywords -->
     <meta name="keywords" content="哦~主耶稣, 哦主耶稣, 主的恢复, 圣经恢复本, 生命读经, 初信喂养12周, 新人喂养48周, 台湾福音书房, 水流职事">
-
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
@@ -22,7 +22,7 @@
 
 <body>
 
-    <div class="container">
+  <div class="container">
         <div class="column">
 
             <!-- 
@@ -46,6 +46,7 @@
             <!-- All your buttons go here -->
             <div class="button-stack" role="navigation">
 
+
               <!-- huifuben -->
               <a class="button button-huifuben" href="https://line.twgbr.org/recoveryversion/bible/index.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/huifuben.svg" alt="圣经恢复本">圣经恢复本</a>
 
@@ -55,33 +56,96 @@
               <!-- shige -->
               <a class="button button-shige" href="https://mygoodland.notion.site/41f98dcbe44143b98635b08a8de719e0" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/shige.svg" alt="诗歌">诗歌</a>
 
-              <!-- Default -->
-              <a class="button button-default" href="https://mana.stmn1.com/cxxl/index01.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="初信喂养12周">初信喂养12周</a>
+              <!-- xrwy - Modified to trigger modal -->
+              <a class="button button-default modal-trigger" href="#" data-modal-target="xrwy-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="新人喂养">新人喂养</a>
 
-              <!-- Default -->
-              <a class="button button-default" href="https://i.tktt.jp/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="新人喂养48周">新人喂养48周</a>
+              <!-- qcth - Modified to trigger modal -->
+              <a class="button button-default modal-trigger" href="#" data-modal-target="qcth-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="七次特会">七次特会</a>
 
-              <!-- Default -->
-              <a class="button button-default" href="https://mygoodland.notion.site/b1935b21f2874bc4a928cae9385f717d" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="七次特会">七次特会</a>
-
-              <!-- Default -->
-              <a class="button button-default" href="https://a.soqiv.com/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-map.svg" alt="灵粮">灵粮</a>
-
-              <!-- Generic Cloud -->
-              <a class="button button-default" href="https://alist.mygoodland.org/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="Cloud Icon">网盘（密码313131）</a>
-
-              <!-- Generic Email -->
-              <a class="button button-default" href="mailto:email@ozhuyesu.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">邮箱联系</a>
-
+              <!-- more - Modified to trigger modal -->
+              <a class="button button-default modal-trigger" href="#" data-modal-target="more-modal" role="button">更多</a>
       </div>
 
       <footer>
-        <a href="mailto:email@ozhuyesu.com" target="_blank">“你要逃避青年人的私欲，同那清心呼求主的人，竭力追求公义、信、爱、和平。”</br>（提后二22）</a>
+        <a href="#" target="_blank">“你要逃避青年人的私欲，同那清心呼求主的人，竭力追求公义、信、爱、和平。”</br>（提后二22）</a>
       </footer>
     
     </div>
   </div>
 
-</body>
+  <!-- Modal for xrwy -->
+  <div class="modal" id="xrwy-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xrwy-modal-title">
+      <div class="modal-overlay" tabindex="-1" data-micromodal-close></div>
+      <div class="modal-container" role="document">
+          <header class="modal-header">
+              <button class="modal-close" aria-label="Close modal" data-micromodal-close>✕</button> <!-- Cross symbol -->
+          </header>
+          <main class="modal-content" id="xrwy-modal-content">
+              <!-- Add your sub-buttons here -->
+              <div class="modal-button-stack">
+                  <a class="button button-default" href="https://flowus.cn/newbelievers48weeks/share/b17e78e6-be74-4c48-8a8a-9ee16e98904e" target="_blank" rel="noopener" role="button">新人喂养48周（链接一）</a>
+                  <a class="button button-default" href="https://i.tktt.jp" target="_blank" rel="noopener" role="button">新人喂养48周（链接二）</a>
+                  <a class="button button-default" href="https://e-shepherding.org/%e5%85%a8%e5%b9%b4%e5%96%82%e5%85%bb/" target="_blank" rel="noopener" role="button">新人喂养48周（链接三）</a>
+                  <a class="button button-default" href="https://mana.stmn1.com/cxxl/index01.html" target="_blank" rel="noopener" role="button">初信喂养12周</a>
+                  <!-- Add more sub-buttons as needed -->
+              </div>
+          </main>
+          <!-- <footer class="modal-footer"> -->
+              <!-- Optional Footer -->
+          <!-- </footer> -->
+      </div>
+  </div>
 
+  <!-- Modal for qcth -->
+  <div class="modal" id="qcth-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qcth-modal-title">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close></div>
+    <div class="modal-container" role="document">
+        <header class="modal-header">
+            <button class="modal-close" aria-label="Close modal" data-micromodal-close>✕</button> <!-- Cross symbol -->
+        </header>
+        <main class="modal-content" id="qcth-modal-content">
+            <!-- Add your sub-buttons here -->
+            <div class="modal-button-stack">
+                <a class="button button-default" href="https://mygoodland.notion.site/b1935b21f2874bc4a928cae9385f717d" target="_blank" rel="noopener" role="button">七次特会（链接一）</a>
+                <a class="button button-default" href="https://mana.stmn1.com/7cth/" target="_blank" rel="noopener" role="button">七次特会（链接二）</a>
+                <a class="button button-default" href="https://four.soqimp.com/7cth/index.html" target="_blank" rel="noopener" role="button">七次特会（链接三）</a>
+                <a class="button button-default" href="https://wiki.mygoodland.org/" target="_blank" rel="noopener" role="button">七次特会（链接四）</a>
+                <!-- Add more sub-buttons as needed -->
+            </div>
+        </main>
+        <!-- <footer class="modal-footer"> -->
+            <!-- Optional Footer -->
+        <!-- </footer> -->
+    </div>
+</div>
+
+
+  <!-- Modal for more -->
+  <div class="modal" id="more-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="more-modal-title">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close></div>
+    <div class="modal-container" role="document">
+        <header class="modal-header">
+            <button class="modal-close" aria-label="Close modal" data-micromodal-close>✕</button> <!-- Cross symbol -->
+        </header>
+        <main class="modal-content" id="more-modal-content">
+            <!-- Add your sub-buttons here -->
+            <div class="modal-button-stack">
+                <a class="button button-default" href="https://a.soqiv.com/" target="_blank" rel="noopener" role="button">灵粮</a>
+                <a class="button button-default" href="http://ailingmusheng.ren/" target="_blank" rel="noopener" role="button">爱灵慕圣</a>
+                <a class="button button-default" href="https://ezoe.work/" target="_blank" rel="noopener" role="button">属灵书报</a>
+                <a class="button button-default" href="http://www.lightinnj.org/" target="_blank" rel="noopener" role="button">圣城之光</a>
+                <a class="button button-default" href="https://alist.mygoodland.org/" target="_blank" rel="noopener" role="button">网盘（密码313131）</a>
+                <a class="button button-default" href="https://mygoodland.notion.site/" target="_blank" rel="noopener" role="button">Paul’s NOTION</a>
+                <a class="button button-default" href="https://stemofjesse.org/doku/doku.php/start" target="_blank" rel="noopener" role="button">Stem of Jesse</a>
+                <a class="button button-default" href="https://www.lsm.org/" target="_blank" rel="noopener" role="button">Living Stream Ministry</a>
+                <!-- Add more sub-buttons as needed -->
+            </div>
+        </main>
+        <!-- <footer class="modal-footer"> -->
+            <!-- Optional Footer -->
+        <!-- </footer> -->
+    </div>
+</div>
+<script src="js/modal.js"></script>
+</body>
 </html>

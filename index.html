@@ -47,8 +47,8 @@
             <div class="button-stack" role="navigation">
 
 
-              <!-- huifuben -->
-              <a class="button button-huifuben" href="https://line.twgbr.org/recoveryversion/bible/index.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/huifuben.svg" alt="圣经恢复本">圣经恢复本</a>
+              <!-- huifuben - Modified to trigger modal -->
+              <a class="button button-huifuben modal-trigger" href="#" data-modal-target="huifuben-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/huifuben.svg" alt="圣经恢复本">圣经恢复本</a>
 
               <!-- smdj -->
               <a class="button button-smdj" href="https://line.twgbr.org/life-study/index-chs.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/smdj.svg" alt="生命读经">生命读经</a>
@@ -75,6 +75,29 @@
     
     </div>
   </div>
+
+  <!-- Modal for huifuben -->
+  <div class="modal" id="huifuben-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="huifuben-modal-title">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close></div>
+    <div class="modal-container" role="document">
+        <header class="modal-header">
+            <button class="modal-close" aria-label="Close modal" data-micromodal-close>✕</button> <!-- Cross symbol -->
+        </header>
+        <main class="modal-content" id="huifuben-modal-content">
+            <!-- Add your sub-buttons here -->
+            <div class="modal-button-stack">
+                <a class="button button-huifuben" href="https://line.twgbr.org/recoveryversion/bible/index.html" target="_blank" rel="noopener" role="button">圣经恢复本（网页版）</a>
+                <a class="button button-huifuben" href="https://bible.twgbr.org/setup/Bible.apk" target="_blank" rel="noopener" role="button">圣经恢复本（Android下载）</a>
+                <a class="button button-huifuben" href="https://apps.apple.com/us/app/%E9%9B%BB%E5%AD%90%E8%81%96%E7%B6%93-%E6%81%A2%E5%BE%A9%E6%9C%AC/id353525092" target="_blank" rel="noopener" role="button">圣经恢复本（iPhone）</a>
+                <!-- Add more sub-buttons as needed -->
+            </div>
+        </main>
+        <!-- <footer class="modal-footer"> -->
+            <!-- Optional Footer -->
+        <!-- </footer> -->
+    </div>
+</div>
+
 
   <!-- Modal for xrwy -->
   <div class="modal" id="xrwy-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xrwy-modal-title">
@@ -149,6 +172,8 @@
         <!-- </footer> -->
     </div>
 </div>
+
+
 <script src="js/modal.js"></script>
 </body>
 </html>

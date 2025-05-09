@@ -1,78 +1,44 @@
 <!DOCTYPE html>
-<html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
-
+<html class="theme-auto" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
     <title>哦~主耶稣</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png"> <!-- Update this with your own favicon -->
-    
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
+    <link rel="icon" type="image/x-icon" href="/images/avatar.png">
     <meta name="description" content="凡呼求主名的，就必得救。-徒二21">
-    
-    <!-- Keywords -->
     <meta name="keywords" content="哦~主耶稣, 哦主耶稣, 主的恢复, 圣经恢复本, 生命读经, 初信喂养12周, 新人喂养48周, 台湾福音书房, 水流职事">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
   </head>
-
 <body>
-
   <div class="container">
         <div class="column">
-
-            <!-- 
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
-
-              Be sure to replace the src with your own image path and update the alt text
-            -->
             <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="主的恢复">
-
-            <!-- Replace with your name or brand -->
             <h1>
               <div>“凡呼求主名的，就必得救”</div>
             </h1>
-
-            <!-- Add a short description about yourself or your brand -->
             <p>（徒二21，罗十13）</p>
-
-            <!-- All your buttons go here -->
             <div class="button-stack" role="navigation">
-
-
               <!-- huifuben - Modified to trigger modal -->
               <a class="button button-huifuben modal-trigger" href="#" data-modal-target="huifuben-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/huifuben.svg" alt="圣经恢复本">圣经恢复本</a>
-
               <!-- smdj -->
               <a class="button button-smdj" href="https://line.twgbr.org/life-study/index-chs.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/smdj.svg" alt="生命读经">生命读经</a>
-
-              <!-- shige -->
-              <a class="button button-shige" href="https://mygoodland.notion.site/41f98dcbe44143b98635b08a8de719e0" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/shige.svg" alt="诗歌">诗歌</a>
-
+              <!-- shige - Modified to trigger modal -->
+              <a class="button button-shige modal-trigger" href="#" data-modal-target="shige-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/shige.svg" alt="诗歌">诗歌</a>
               <!-- mrmn -->
               <a class="button button-default" href="https://mana.tktt.jp" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="每日吗哪">每日吗哪</a>
-
               <!-- xrwy - Modified to trigger modal -->
               <a class="button button-default modal-trigger" href="#" data-modal-target="xrwy-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="新人喂养">新人喂养</a>
-
               <!-- qcth - Modified to trigger modal -->
               <a class="button button-default modal-trigger" href="#" data-modal-target="qcth-modal" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="七次特会">七次特会</a>
-
               <!-- more - Modified to trigger modal -->
               <a class="button button-default modal-trigger" href="#" data-modal-target="more-modal" role="button">更多</a>
       </div>
-
       <footer>
         <a>“你要逃避青年人的私欲，同那清心呼求主的人，竭力追求公义、信、爱、和平。”</br>（提后二22）</a>
       </footer>
-    
     </div>
   </div>
 
@@ -96,8 +62,30 @@
             <!-- Optional Footer -->
         <!-- </footer> -->
     </div>
-</div>
+    </div>
 
+  <!-- Modal for shige -->
+  <div class="modal" id="shige-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="shige-modal-title">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close></div>
+    <div class="modal-container" role="document">
+        <header class="modal-header">
+            <button class="modal-close" aria-label="Close modal" data-micromodal-close>✕</button> <!-- Cross symbol -->
+        </header>
+        <main class="modal-content" id="shige-modal-content">
+            <!-- Add your sub-buttons here -->
+            <div class="modal-button-stack">
+                <a class="button button-shige" href="https://alike-breakfast-a5e.notion.site/0eceb0a63808422f920a5f0475ca4859" target="_blank" rel="noopener" role="button">诗歌</a>
+                <a class="button button-shige" href="http://lshymn.net/" target="_blank" rel="noopener" role="button">诗歌（备用一）</a>
+                <a class="button button-shige" href="https://mygoodland.notion.site/41f98dcbe44143b98635b08a8de719e0" target="_blank" rel="noopener" role="button">诗歌（备用二）</a>
+                <a class="button button-shige" href="https://four.soqimp.com/sg/sg.html" target="_blank" rel="noopener" role="button">诗歌（备用三）</a>
+                <!-- Add more sub-buttons as needed -->
+            </div>
+        </main>
+        <!-- <footer class="modal-footer"> -->
+            <!-- Optional Footer -->
+        <!-- </footer> -->
+    </div>
+    </div>
 
   <!-- Modal for xrwy -->
   <div class="modal" id="xrwy-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xrwy-modal-title">
@@ -111,7 +99,8 @@
               <div class="modal-button-stack">
                   <a class="button button-default" href="https://flowus.cn/newbelievers48weeks/share/b17e78e6-be74-4c48-8a8a-9ee16e98904e" target="_blank" rel="noopener" role="button">新人喂养48周</a>
                   <a class="button button-default" href="https://i.tktt.jp" target="_blank" rel="noopener" role="button">新人喂养48周（备用一）</a>
-                  <a class="button button-default" href="https://e-shepherding.org/%e5%85%a8%e5%b9%b4%e5%96%82%e5%85%bb/" target="_blank" rel="noopener" role="button">新人喂养48周（备用二）</a>
+                  <a class="button button-default" href="https://gold-foxglove-f9e.notion.site/b038c383319e441991913e0ca1c3f057" target="_blank" rel="noopener" role="button">新人喂养48周（备用二）</a>
+                  <a class="button button-default" href="https://e-shepherding.org/%e5%85%a8%e5%b9%b4%e5%96%82%e5%85%bb/" target="_blank" rel="noopener" role="button">新人喂养48周（备用三）</a>
                   <a class="button button-default" href="https://mana.stmn1.com/cxxl/index01.html" target="_blank" rel="noopener" role="button">初信喂养12周</a>
                   <!-- Add more sub-buttons as needed -->
               </div>
@@ -143,8 +132,7 @@
             <!-- Optional Footer -->
         <!-- </footer> -->
     </div>
-</div>
-
+    </div>
 
   <!-- Modal for more -->
   <div class="modal" id="more-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="more-modal-title">
@@ -161,6 +149,8 @@
                 <a class="button button-default" href="https://ezoe.work/" target="_blank" rel="noopener" role="button">属灵书报</a>
                 <a class="button button-default" href="http://www.lightinnj.org/" target="_blank" rel="noopener" role="button">圣城之光</a>
                 <a class="button button-default" href="https://alist.mygoodland.org/" target="_blank" rel="noopener" role="button">网盘（密码313131）</a>
+                <a class="button button-default" href="https://hiram05.notion.site/cde7058a79774d61ba7ddd84d7804226" target="_blank" rel="noopener" role="button">一丛荆棘 NOTION</a>
+                <a class="button button-default" href="https://gold-foxglove-f9e.notion.site/BREAK-OPEN-d851f1c0a90944a98a18e3c4e6386ac3" target="_blank" rel="noopener" role="button">BREAK OPEN NOTION</a>
                 <a class="button button-default" href="https://mygoodland.notion.site/" target="_blank" rel="noopener" role="button">Paul’s NOTION</a>
                 <a class="button button-default" href="https://stemofjesse.org/doku/doku.php/start" target="_blank" rel="noopener" role="button">Stem of Jesse</a>
                 <a class="button button-default" href="https://www.lsm.org/" target="_blank" rel="noopener" role="button">Living Stream Ministry</a>
@@ -171,9 +161,7 @@
             <!-- Optional Footer -->
         <!-- </footer> -->
     </div>
-</div>
-
-
+    </div>
 <script src="js/modal.js"></script>
 </body>
 </html>
